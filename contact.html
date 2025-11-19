@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>Kong Wear - ติดต่อ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="img/logo.png" class="logo">
+    <h1>Kong Wear</h1>
+    <nav>
+        <a href="index.html">หน้าแรก</a>
+        <a href="products.html">สินค้า</a>
+        <a href="contact.html">ติดต่อ</a>
+    </nav>
+</header>
+
+<section class="contact-form">
+<h2>ส่งข้อความหาเรา</h2>
+
+<form onsubmit="sendMessage(event)">
+<label>ชื่อ</label>
+<input type="text" id="name" required>
+
+<label>อีเมล</label>
+<input type="email" id="email" required>
+
+<label>ข้อความ</label>
+<textarea id="msg" required></textarea>
+
+<button type="submit">ส่งข้อความ</button>
+</form>
+
+<p id="result"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
